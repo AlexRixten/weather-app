@@ -99,3 +99,13 @@ h1 {
 .bold {
   font-weight: 700;
 }
+
+.weatherIcon{
+  width: 40px;
+  height: 40px;
+}
+
+.temp{
+  display: flex;
+  flex-direction: column;
+}
