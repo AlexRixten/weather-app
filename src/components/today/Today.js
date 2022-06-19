@@ -8,12 +8,13 @@ export default function Today(props) {
   return (
     <div className='today'>
       <span className="timeNow">{now}</span>
-      <h1 className="location">{props.data?.name}, {props.data?.sys.country}</h1>
+      <h1 className="location">{props.data?.name} {props.data?.sys.country}</h1>
       <div className="temp">
         <div className="tempInfo">
           <img className='tempIcon' src={icon} alt="icon" />
           <h4 className="tempC">{Math.ceil((props.data.main?.temp.toFixed() - 32) * 5 / 9)}°C</h4>
         </div>
+        <span className="todayDescr">{props.data?.weather[0].description}</span>
         {props.data.main ? <p className='bold'>Feels Like {Math.ceil((props.data.main.feels_like.toFixed() - 32) * 5 / 9)}°C</p> : null}
       </div>
       <div className="info">
