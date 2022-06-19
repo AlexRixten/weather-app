@@ -1,0 +1,66 @@
+.today{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+    height: 100vh;
+}
+
+.timeNow{
+    color: red;
+}
+
+.location{
+    font-weight: 900;
+}
+
+.tempInfo{
+    display: flex;
+    align-items: center;
+}
+
+.tempIcon{
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+}
+
+.infoTitle{
+    margin-top: 10px;
+}
+
+.tempC{
+    font-size: 36px;
+    font-weight: 100;
+}
+
+.info{
+    display: flex;
+}
+
+.infoLeft, .infoRight{
+    flex: 1;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    padding: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
