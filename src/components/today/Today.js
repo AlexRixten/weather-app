@@ -2,6 +2,7 @@ import React from 'react'
 import './today.css'
 
 export default function Today(props) {
+
   const now = new Date().toLocaleString()
   const icon = props.data.weather ? require(`../../assets/weatherIcon/${props.data.weather[0].icon}@2x.png`) : null
   return (

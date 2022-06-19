@@ -53,8 +53,11 @@ function App() {
 
   return (
     <div className="container">
-      <Search searchLocation={searchLocation} location={location} setLocation={setLocation} timerSunSet={timerSunSet} timerSunRise={timerSunRise} />
-      {Object.values(data).length > 0 ? <Today data={data} /> : null}
+      <Search 
+        searchLocation={searchLocation} 
+        location={location} 
+        setLocation={setLocation}  />
+      {Object.values(data).length > 0 ? <Today data={data} timerSunRise={timerSunRise} timerSunSet={timerSunSet} /> : null}
     </div>
   );
 }
