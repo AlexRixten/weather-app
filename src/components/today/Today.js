@@ -28,9 +28,8 @@ export default function Today(props) {
           <span className="infoRightVisibility">Visibility: {Math.ceil(props.data.visibility) / 1000}km</span>
         </div>
       </div>
-      <p className="timer bold"> {`До восхода солнца: ${props.timerSunRise}`}</p>
-      <p className="timer bold"> {`До заката солнца: ${props.timerSunSet}`}</p>
-
+      {props.timerSunRise ? <p className="timer bold"> {`До восхода солнца: ${props.timerSunRise}`}</p> : null}
+      {props.timerSunSet ? <p className="timer bold"> {`До заката солнца: ${props.timerSunSet}`}</p> : null}
     </div>
   )
 }
